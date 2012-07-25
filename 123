@@ -1,1 +1,188 @@
-123
+<?php
+error_reporting(1);
+ini_set("display_errors", 1);
+$gumballMachine = new gumballMachine(5);
+$gumballMachine->insertQuarter();
+$gumballMachine->turnCrank();
+var_dump($gumballMachine);
+
+
+
+ class gumballMachine{
+  public $soldOutState;
+	public $noQuarterState;
+	public $hasQuarterState;
+	public $soldState;
+	public $winnerState;
+	public $state;
+	public $count = 0;
+	public function __construct($number){var_dump(new SoldOutState( $this ));die;
+	
+		$this->soldOutState = new SoldOutState( $this );
+		$this->noQuarterState = new  NoQuarterState( $this );
+		$this->hasQuarterState = new HasQuarterState( $this );
+		$this->soldState = new SlodState( $this );
+		$this->winnerState = new WinnerState( $this );
+
+		$this->count = $number;
+		if($number > 0){
+			$this->state = $this->noQuarterState;
+		}
+	}
+	public function insertQuarter(){
+		$this->state->insertQuarter();
+	}
+	public function ejectQuarter(){
+		$this->state->ejectQuarter();
+	}
+	public function turnCrank(){
+		$this->state->turnCrank();
+		$this->state->dispense();
+	}
+	public function setState($state){
+		$this->state = $state;
+	}
+	public function releaseBall(){
+		print ("a gumball comes rolling out the slot");
+		if($this->count != 0){
+			$this->count = $this->count -1;
+		}
+	}
+	public function getCount(){
+		return $this->count;
+	}
+	public function getNoQuarterState(){
+		return $this->noQuarterState;
+	}
+}
+
+interface State{
+	public function insertQuarter();
+	public function ejectQuarter();
+	public function turnCrank();
+	public function dispense();
+}
+class WinnerState implements State{
+	public $gumballMachine;
+	public function __construct($gumballMachine){
+		$this->gumballMachine = $gumballMachine;
+	}
+	public function insertQuarter(){
+		print "winner m";
+	}
+	public function ejectQuarter(){
+		print "winner the crank";
+	}
+	public function turnCrank(){
+		print "twinnerther gumball";
+	}
+	public function dispense(){
+		print "winner dispense";
+		$this->gumballMachine->releaseBall();
+		if($this->gumballMachine->getCount() == 0){
+			$this->gumballMachine->setState($this->gumballMachine->getSoldOutState());
+		}else{
+			$this->gumballMachine->releaseBall();
+			if($this->gumballMachine->getCount() > 0){
+				$this->gumballMachine->setState($this->gumballMachine->getNoQuarterState());
+			}else{
+				print "no gumballs";
+				$this->gumballMachine->setState($this->gumballMachine->getSoldOutState());
+			}
+		}
+	}
+}
+
+class SlodState implements State{
+	public $gumballMachine;
+	public function __construct($gumballMachine){
+		$this->gumballMachine = $gumballMachine;
+	}
+	public function insertQuarter(){
+		print "wait, already gire gum";
+	}
+	public function ejectQuarter(){
+		print "sorry,you already turned the crank";
+	}
+	public function turnCrank(){
+		print "turning twice doesnt get you another gumball";
+	}
+	public function dispense(){
+		$this->gumballMachine->releaseBall();
+		if($this->gumballMachine->getCount() > 1){
+			$this->gumballMachine->setState($this->gumballMachine->getNoQuarterState());
+		}else{
+			print "oops, out of gumballs";
+			$this->gumballMachine->setState($this->gumballMachine->getSoldOutState());
+		}
+	}
+}
+class SoldOutState implements State{
+	public $gumballMachine;
+	public function __construct($gumballMachine){
+		$this->gumballMachine = $gumballMachine;
+	}
+	public function insertQuarter(){
+		print "wait, already gire gum";
+	}
+	public function ejectQuarter(){
+		print "sorry,you already turned the crank";
+	}
+	public function turnCrank(){
+		print "turning twice doesnt get you another gumball";
+	}
+	public function dispense(){
+		$this->gumballMachine->releaseBall();
+		if($this->gumballMachine->getCount() > 1){
+			$this->gumballMachine->setState($this->gumballMachine->getNoQuarterState());
+		}else{
+			print "oops, out of gumballs";
+			$this->gumballMachine->setState($this->gumballMachine->getSoldOutState());
+		}
+	}
+}
+ class NoQuarterState implements State{
+	public $gumballMachine;
+	public function __construct($gumballMachine){
+		$this->gumballMachine = $gumballMachine;
+	}
+	public function insertQuarter(){
+		print("you insert a quarter");
+		$this->gumballMachine->setState($this->gumballMachine->getHasQuarterState());
+	}
+	function ejectQuarter(){
+		print("you havent inerted a quarter");
+	}
+	function turnCrank(){
+		print("you turned ,but theres no quarter");
+	}
+	function dispense(){
+		print("you need to pay first");
+	}
+}
+
+ class HasQuarterState implements State{
+	public $gumballMachine;
+	function __construct($gumballMachine){
+		$this->gumballMachine = $gumballMachine;
+	}
+	public function insertQuarter(){
+		print "you can not insert another quarter";
+	}
+	public function ejectQuarter(){
+		print "quarter returned";
+		$this->gumballMachine->setState($this->gumballMachine->getNoQuarterState());
+	}
+	public function turnCrank(){
+		print "you return";
+		$winner = rand(1,10);
+		if($winner == 5 && $this->gumballMachine->getCount() > 1){
+			$this->gumballMachine->setState($this->gumballMachine->getWinnerState());
+		}else{
+			$this->gumballMachine->setState($this->gumballMachine->getSolidState());
+		}
+	}
+	public function dispense(){
+		print "no gumball dispensed";
+	}
+}
