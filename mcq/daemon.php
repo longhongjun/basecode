@@ -1,7 +1,7 @@
 <?php 
 #component
- class component{
-  public function add($name){
+abstract class component{
+	public function add($name){
 	}
 	public function handle(){
 	}
@@ -42,3 +42,4 @@ $allmenu->add($menu);
 $menu->add($leaf);
 $menu->add($leaf);
 $allmenu->handle();
+
