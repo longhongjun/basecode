@@ -1,1 +1,20 @@
-33124234
+
+<?php 
+# proxy
+interface base{
+  public function get_name();
+}
+class server implements base{
+	public function get_name(){
+		return 'success';
+	}
+}
+class proxy implements base{
+	public function get_name(){
+		$obj = new server();
+		return $obj->get_name();
+	}
+}
+
+$proxy = new proxy();
+echo $proxy->get_name();
