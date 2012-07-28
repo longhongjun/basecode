@@ -1,1 +1,69 @@
-23333
+<?php
+#chain of responsibility
+
+error_reporting(1);
+ini_set("display_error", 1);
+class base_company{
+  public $name ;
+	public function set_name($name){
+		$this->name = $name;
+	}
+	public function get_name(){
+		return $this->name;
+	}
+	public function handle(){
+	}
+}
+class a_company extends base_company{
+	public function handle(){
+		$rand = rand(1, 3);
+		if($rand == 2){
+			echo  "success".$rand;
+		}
+		$name = $this->get_name();
+		if($name){
+			$name->handle();
+		}
+	}
+}
+class b_company extends base_company{
+	public function handle(){
+		$rand = rand(4, 6);
+		if($rand == 5){
+			echo "success".$rand;
+		}
+		$name = $this->get_name();
+		if($name){
+			$name->handle();
+		}
+	}
+}
+class c_company extends base_company{
+	public function handle(){
+		$rand = rand(7, 7);
+		if($rand == 7){
+			echo "success".$rand;
+		}
+		$name = $this->get_name();
+		if($name){
+			$name->handle();
+		}
+	}
+}
+
+$a = new a_company();
+$b = new b_company();
+$c = new c_company();
+$a->set_name($b);
+$b->set_name($c);
+
+for($i = 1;$i < 1100; $i++){
+$re = $a->handle();
+echo "\n";
+}
+
+
+
+
+
+
