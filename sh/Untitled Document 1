@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+set password pass
+set timeout -1
+
+spawn ssh 10.*.226.* -l root
+expect "root@10.*.226.*'s password: "
+send "$password\r"
+
+interact
+expect "Connection to 10.*.226.* closed."
+send "$password\r"
