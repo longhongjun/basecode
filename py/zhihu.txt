@@ -1,0 +1,1918 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>想成为一名出色的架构师，如何才能真正的提高自己？ - 知乎</title>
+
+<meta name="apple-itunes-app" content="app-id=432274380, app-argument=zhihu://questions/19841397">
+
+
+
+
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(57px).png" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(72px).png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(114px).png" sizes="114x114" />
+
+<link rel="shortcut icon" href="http://static.zhihu.com/static/favicon.ico" type="image/x-icon">
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://static.zhihu.com/static/search.xml" title="知乎" />
+
+
+
+
+<link rel="stylesheet" href="http://static.zhihu.com/static/css/v2/c/z1301081403040020.css" type="text/css" media="screen,print" />
+
+
+
+
+
+
+<style>
+#zh-question-answer-summary-wrap .zm-editable-require-reason-wrap{display:none}
+#zh-question-notification-summary li{margin:0}
+</style>
+
+
+</head>
+<body class="zhi">
+<div role="navigation" class="zu-top">
+<div class="zg-wrap" id="zh-top-inner">
+<a href="/" class="zu-top-link-logo" id="zh-top-link-logo">知乎</a>
+
+
+
+
+
+
+<div class="top-nav-profile">
+<a href="/people/long-hong-jun" class="zu-top-nav-userinfo ">
+<span class="name">龙红军</span>
+<img class="avatar" src="http://p4.zhimg.com/32/64/326485725_s.jpg" />
+<span id="zh-top-nav-new-pm" class="zg-noti-number zu-top-nav-pm-count"
+style="visibility:visible" data-count="1">
+1
+</span>
+</a>
+<ul class="top-nav-dropdown" id="top-nav-profile-dropdown">
+<li>
+<a href="/people/long-hong-jun">
+<i class="zg-icon zg-icon-dd-home"></i>我的主页
+</a>
+</li>
+
+<li>
+<a href="/inbox">
+<i class="zg-icon zg-icon-dd-pm"></i>私信
+<span id="zh-top-nav-pm-count" class="zu-top-nav-pm-count zg-noti-number"
+style="visibility:visible" data-count="1">
+1
+</span>
+</a>
+</li>
+<li>
+<a href="/settings">
+<i class="zg-icon zg-icon-dd-settings"></i>设置
+</a>
+</li>
+<li>
+<a href="/logout">
+<i class="zg-icon zg-icon-dd-logout"></i>退出
+</a>
+</li>
+</ul>
+
+</div>
+
+<div role="search" id="zh-top-search" class="zu-top-search">
+<form method="GET" action="/search" id="zh-top-search-form" class="zu-top-search-form">
+
+<input type="text" class="zu-top-search-input" id="q" name="q" autocomplete="off" value="" placeholder="搜索话题、问题或人…" />
+<input type="hidden" name="type" value="question" />
+<label for="q" class="hide-text zg-icon">知乎搜索</label>
+</form>
+<button class="zu-top-add-question" id="zu-top-add-question">提问</button>
+</div>
+
+
+
+<div id="zg-top-nav" class="zu-top-nav">
+<ul class="zu-top-nav-ul zg-clear">
+
+
+<li class="zu-top-nav-li " id="zh-top-home-link">
+<a class="zu-top-nav-link" href="/" id="zh-top-link-home">首页</a>
+</li>
+<li class="top-nav-topic-selector zu-top-nav-li " id="zh-top-nav-item-topic">
+<a class="zu-top-nav-link" href="/topic" id="top-nav-dd-topic">话题</a>
+
+</li>
+
+
+<li class="top-nav-noti zu-top-nav-li ">
+<a class="zu-top-nav-link" href="javascript:void(0);" id="zh-top-nav-count-wrap"><span class="mobi-arrow"></span>消息</a>
+</li>
+
+
+
+
+</ul>
+<div class="zu-top-nav-live zg-r5px" id="zh-top-nav-live" style="display:none">
+<div class="zu-top-nav-live-inner zg-r5px">
+<div class="zu-top-live-icon">&nbsp;</div>
+
+<div class="newnoti-tip" id="zh-newnoti-tip">
+新通知开放测试。<a href="javascript:;" name="use-newnoti" class="zg-link-litblue-normal">立即试用</a>
+<a class="x-m" href="javascript:;" name="close" data-tip="s$b$不再提示">X</a>
+</div>
+
+<ul class="zu-home-noti-inner"></ul>
+<a href="/notifications" id="zh-top-nav-btn-view-all" class="zg-btn-blue zg-right" style="font-size:12px">查看所有</a>
+<a href="javascript:;" class="zg-btn-white zg-r3px" id="zh-top-nav-btn-hide">知道了</a>
+</div>
+</div>
+<div class="zu-top-nav-live zu-noti7-popup zg-r5px" id="zh-top-nav-live-new">
+<div class="zu-top-nav-live-inner zg-r5px">
+<div class="zu-top-live-icon">&nbsp;</div>
+<div class="zu-home-noti-inner zg-clear" id="zh-top-nav-live-new-inner">
+<div class="zm-noti7-popup-tab-container">
+<a class="zm-noti7-popup-tab-item message" href="javascript:;">
+<span class="icon">消息</span>
+<span class="new-noti" style="display:none;">new</span>
+</a>
+<a class="zm-noti7-popup-tab-item user" href="javascript:;">
+<span class="icon">用户</span>
+<span class="new-noti" style="display:none;">new</span>
+</a>
+<a class="zm-noti7-popup-tab-item thanks" href="javascript:;">
+<span class="icon">赞同和感谢</span>
+<span class="new-noti" style="display:none;">new</span>
+</a>
+</div>
+</div>
+<div class="zm-noti7-frame-border top"></div>
+<div class="zm-noti7-frame">
+<div class="zm-noti7-content">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="icon" src="http://static.zhihu.com/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="icon" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="icon" src="http://static.zhihu.com/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="icon" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="icon" src="http://static.zhihu.com/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="icon" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-frame-border bottom"></div>
+<div class="zm-noti7-popup-footer">
+<a href="/notifications" class="zm-noti7-popup-footer-all zg-right">查看全部 &raquo;</a>
+<a href="/settings/notify" class="zm-noti7-popup-footer-set" title="通知设置" ><i class="zg-icon zg-icon-settings"></i></a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="zu-global-notify" id="zh-global-message" style="display:none">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<a class="zu-global-notify-close" href="javascript:;" title="关闭" name="close">x</a>
+<span class="zu-global-notify-icon"></span>
+<span class="zu-global-notify-msg"></span>
+</div>
+</div>
+</div>
+
+<!--[if lte IE 6]>
+<div id="zh-ie6-warning">您的浏览器版本太低，将不能正常浏览知乎。请升级 <a href="http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie">Internet Explorer</a> 或使用 <a href="http://www.google.com/chrome/">Google Chrome</a> 浏览器。<br>如果您在使用双核浏览器，请切换到高速 / 极速 / 神速核心。</div>
+<![endif]-->
+
+
+
+<div class="zu-global-notify zu-global-notify-info" id="zh-question-redirect-info" style="display:none"></div>
+
+
+<div class="zu-global-notify zu-global-notify-info" id="zh-question-notification-summary" style="display:none;">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<span class="zu-global-notify-icon"></span>
+<ul class="zu-question-notify-wrap">
+</ul>
+</div>
+</div>
+</div>
+<div class="zg-wrap zu-main" id="zh-single-question-page"
+data-urltoken="19841397">
+<div class="zu-main-content">
+<div class="zu-main-content-inner" id="zh-single-question">
+<div id="zh-message-container" class="zg-info-message" style="display:none;"></div>
+<div class="zm-tag-editor zg-section">
+<div class="zm-tag-editor-labels zg-clear">
+
+<a class="zm-item-tag"
+href="/topic/19552332"
+data-tip="t$b$19552332" data-token="19552332" data-topicid="708">
+软件开发
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19557488"
+data-tip="t$b$19557488" data-token="19557488" data-topicid="2437">
+架构师
+</a>
+
+<a class="zm-item-tag"
+href="/topic/19578413"
+data-tip="t$b$19578413" data-token="19578413" data-topicid="9391">
+系统架构
+</a>
+
+</div>
+</div>
+<div id="zh-question-title">
+
+<h2 class="zm-item-title zm-editable-content">
+
+想成为一名出色的架构师，如何才能真正的提高自己？
+
+</h2>
+</div>
+
+<div id="zh-question-detail"
+data-resourceid="116467"
+data-action="/question/detail">
+<div class="zm-editable-content">想成为一个出色的架构师，但是学得知识不是很系统。<br>目前属于自学，设计模式，算法导论，编译原理，UML2.0等都在看。<br>自学可想而知，肯定不够系统，不够全面，也不科学。<br><br>身边也没什么人可以在这方面教导我，工作已经3年了，每次换工作都是呆在小公司，技术这块的基本自己来抗，很多东西都自己摸索的。去年开始到现在完成了算是从头到尾自己全权负责的项目（PHP-MYSQL-PYTHON，PHP的MVC框架自己写的），做下来发现自己有很多的不足。<br><br>除了看书，自学，看看MIT的公开课，还有什么办法可以让自己有很大的提升空间？</div>
+
+</div>
+<div class="zm-item-meta zm-item-comment-el" id="zh-question-meta-wrap">
+<a href="javascript:;" name="report" class="report zg-right meta-item">
+<i class="z-icon-no-help"></i>举报</a>
+<a href="javascript:;" name="addcomment" class="comment meta-item">
+<i class="z-icon-comment"></i>1 条评论</a>
+<a href="javascript:;" name="share" class="share meta-item">
+<i class="z-icon-share"></i>分享</a>
+
+
+</div>
+<div class="zh-answers-title clearfix" id="zh-question-filter-wrap">
+
+<div id="zh-answers-filter" class="zh-answers-filter">
+<span class="lbl">按票数排序</span>
+<i class="zg-icon zg-icon-double-arrow"></i>
+</div>
+<div class="zh-answers-filter-popup"></div>
+
+<h3 id="zh-question-answer-num">13 个回答</h3>
+
+
+
+</div>
+<div class="zh-question-answer-summary-wrap" id="zh-question-answer-summary-wrap" style="display:none;">
+<h3>
+<a href="http://www.zhihu.com/question/20014415" target="_blank" class="zg-right zg-link-litblue" style="font-weight:normal">什么是答案总结？</a>
+答案总结</h3>
+<div class="zg-section"
+id="zh-question-answer-summary"
+data-resourceid="116467"
+data-action="/question/summary">
+<div class="zm-editable-content"></div>
+</div>
+</div>
+<div id="zh-question-answer-summary-editor-menu" style="display:none">
+<select><option value="default">default</option></select>
+</div>
+<div id="zh-question-answer-wrap" class="zm-item-expanded" data-widget="navigable" data-navigable-options="{&quot;items&quot;: &quot;&gt;.zm-item-answer&quot;}">
+<span id="zh-question-answer-insert-placeholder"></span>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="602660"
+data-atoken="13707213"
+data-score="112.1328"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326701117"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="602660"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="56">56</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$deviji"
+class="zm-item-link-avatar"
+href="/people/deviji">
+<img src="http://p2.zhimg.com/59/a4/59a424ab8_s.jpg"
+class="zm-list-avatar"
+data-source="http://p2.zhimg.com/59/a4/59a424ab8_s.jpg" />
+</a>
+
+<a data-tip="p$t$deviji" href="/people/deviji">deviJi</a>，<strong title="喜欢探险，喜欢计算机界的一切新技术" class="zu-question-my-bio">喜欢探险，喜欢计算机界的一切新技术</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="56">
+
+56 票，来自
+<span class="voters">
+<a data-tip="p$t$tcdona" href="/people/tcdona" class="zg-link" title="陶铖">陶铖</a>、<a data-tip="p$t$tclh123" href="/people/tclh123" class="zg-link" title="李寒">李寒</a>、<a data-tip="p$t$huang-liang-yi-69" href="/people/huang-liang-yi-69" class="zg-link" title="黄良懿">黄良懿</a>
+</span>
+
+
+<a href="javascript:;" name="more" class="zg-link-gray more"> 更多</a>
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">架构师是一个充满挑战的职业，知识面的宽窄往往决定着一个架构师的架构能力，所以在这一点上我比较赞成你的学习方式，就是要阅读大量的技术书籍，但我希望你不要仅限于软件相关的书籍，经常泡技术论坛，一方面可以结交朋友，一方面可以增加自己的知识面。<br>       公司的大小往往决定了所做的项目规模，一般的大项目不太可能直接总包给小公司去做，但这并不妨碍小公司可以分包到大项目的一部分。在做小项目的同时也可以积累丰富的经验，我自己就是一个这样的例子。<br>       我在小公司混迹了5年多，其中也偶尔有1两个大公司，比如大唐电信，但是基本上都是小公司，从基层的程序要到公司的开发总监都做过，甚至自己还设计过包括LED显示屏，密码键盘在内的收费系统，自己联系厂家OEM，当然这些今天已经广泛应用了，当时我们的客户用上之后还是非常震撼的。<br>        知识面的宽广对于一名出色的架构师来说是必不可少的技能，也许很多人对架构的理解还停留在设计模式，重构，SOA等等的软件层面，然而这仅仅是非常基本的东西，架构师的脑子里不光需要知道让软件如何高效的运行，还需要知道如何去结合网络，存储，甚至一些文件系统的特性，比如GFS，NFS，XFS，NTFS等等，而且架构师还需要知道一些编程语言的特性，C，C++，Java，PHP，Python，Lisp，JS等等，现在是一个混合编程的时代，只了解一种语言，即使再精通也会使你在架构系统的时候受到很大的局限性。<br>       再有一点，架构师需要对数据库技术有深刻的认识，因为现今是一个信息时代，大量的信息都是需要存储并检索的，数据库设计的不好，将会严重影响系统的性能，而这一点往往会被我们的设计人员忽略，他们只知道遵守那些范式而不会结合数据的特性去设计数据库。<br>       看你的编程情况，你好像做PHP开发比较多，PHP比较适合B/S结构的应用开发，这会限制一个架构师的思路，我建议你再学习一门适合做C/S开发的语言，拓宽自己的视野。<br>       从一个程序员到架构师是一个很大的变化，架构师需要从大的方面考虑，而不只是考虑这个模块该用哪种设计模式去开发。不能急于求成，也许是我自己变化的比较慢，我用了10年的时间，这10年里，我使用超过一年的编程语言包括了delphi，C++，Java，python，使用的数据库包括了oracle，infomix，sybase，sqlserver，mysql，javadb，sqlite等等，使用过大型机，小型机，服务器。unix，linux，windows都至少做过两年以上的开发，这些使用和开发的经历会大大增强一个人在做架构师这个职业时的技术素养。<br>       总之，想要成为架构师，需要有耐心，不断学习，拓宽自己的视野，不仅仅局限于自己眼前的项目，关注开源技术，关注热门技术社区的新动向。</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="602660-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13707213">2012-01-16</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>2 条评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="602843"
+data-atoken="13707640"
+data-score="30.13279"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326704038"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="602843"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="16">16</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$cmmi"
+class="zm-item-link-avatar"
+href="/people/cmmi">
+<img src="http://p3.zhimg.com/90/66/9066f7c9a_s.jpg"
+class="zm-list-avatar"
+data-source="http://p3.zhimg.com/90/66/9066f7c9a_s.jpg" />
+</a>
+
+<a data-tip="p$t$cmmi" href="/people/cmmi">何明璐</a>，<strong title="网名人月神话。关注产品管理，IT项目管理，SOA，云计算，IT规划和咨询，个人知识管理。新浪博客 http://blog.sina.com.cn/cmmi" class="zu-question-my-bio">网名人月神话。关注产品管理，IT项目…</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="16">
+
+16 票，来自
+<span class="voters">
+<a data-tip="p$t$jecvay" href="/people/jecvay" class="zg-link" title="Jecvay Liu">Jecvay Liu</a>、<a data-tip="p$t$he-jin-chi" href="/people/he-jin-chi" class="zg-link" title="何金池">何金池</a>、<a data-tip="p$t$yping061" href="/people/yping061" class="zg-link" title="穆易">穆易</a>
+</span>
+
+
+<a href="javascript:;" name="more" class="zg-link-gray more"> 更多</a>
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">06年写的如何循序渐进向dotnet架构师发展，可参考：<br><br><br>微软的DotNet开发绝对是属于那种入门容易提高难的技术。而要能够成为DotNet架构师没有三年或更长时间的编码积累基本上是不可能的。特别是在大 型软件项目中，架构师是项目核心成员，承上启下，因此RUP方法论也认同以架构为核心，体现4+1视图在整个软件开发过程中的重要作用。架构人员既要精通 技术，又要熟悉业务，而且基本对软件生命周期各阶段的相关技术都需要有相关的积累和知识储备，而这些不经过多年的磨练是很难达到这个高度的。<br> <br>要成为一个合格的架构师首先必须是一个合格或优秀的编码人员，对于开发来讲编码始终都是最重要的一项技能，在编码过程中只要自己善于去思考和分析问题，就 可以多学到很多相关的知识和技术。所以我们在开发过程中一定要注意新知识和新技术的学习，前人经验和成果的学习。编码过程中应该去思考的一些问题有：<br><br> 1.在编码过程中自己是否做单元测试，是否使用相关工具做单元测试，如果没有的话是什么原因无法把单元测试做起来？<br>  2.自己编码的泄露率情况，编码泄露的BUG的原因分析<br> 3.是否有意识的对代码进行重构，重构过程中是否引入了相关设计模式的思想？<br>  4.是否对C#语言的一些高级特性进行学习，如反射调用，异步处理等。<br>  5.是否对Remoting和WebService两种分布式技术做过研究和对比分析？<br>  6.是否经常研究开源项目和开源代码，如Duwamish，PetShop，NUnit,Enterprise Library，Nant等<br> 7.是否对对象持久化机制和O/R Mapping等相关技术做过相关的研究<br> 8.平时在编码过程中是否注重公用组件和公用类的复用和抽取<br> 9.自己在平时工作和学习中是否经常开发些小工具提高工作效率，巩固学习知识<br> <br>设计和编码其实是密切而不可分的，对于严格将设计和编码分开的瀑布模型一般也仅仅在大型项目中应用。而及时编码和设计分离，也不是将编码人员不需要思考， 编码活动始终是一项创造性的劳动，如果否定这个观点那就代表编码过程完全不需要人员介入而可以完全自动化。因此在这里谈设计主要还是指设计人员的系统化思 维能力，设计人员应该比开发人员站高一个层次来分析和思考问题。设计人员最重要的一个技能就是现实-&gt;抽象的转换，而这个就需要谈到方法论的问题 了，技术人员需要积累面对对象分析和设计或结构化分析知识的积累，需要有较强的数据库分析和设计能力。一个设计能否成为很好的架构师关键就在这种积累的深 度和广度上面了。<br><br> 因此在设计过程中应该考虑的问题有：<br> 1.你现在分析和设计能力能否胜任大中型的应用系统还是只是独立功能分析和设计？<br>  2.设计过程中是否有意识的考虑到组件的复用和相关接口设计准则。是否能够很自然的将分析模式，设计模式的相关内容应用到自己的设计过程中。<br>  3.是否对XP，RUP，面向对象，结构化等方法论都有过较系统化的学习和思考。<br>  4.是否真正理解系统功能需求和非功能需求对系统设计的不同的指导作用。<br>  5.对自己设计的功能是否会根据后期的变更来反思自己的设计为何不能很好的适应变更？<br>  6.是否在设计过程中经常自己开发些原型来对自己的设计思路进行验证？<br>  7.是否专注技术的同时开始专业业务流程的分析，关注业务建模？<br> <br>如果我们在设计和开发过程中经常关注这些知识和技能的话，成为一个合格的架构师是早晚的事情。平时能够胜任工作开发用到的知识和技能是微不足道的，如果自 己不是有意识的去学习这些知识的话，那技能是很难得到进一步提高的。我参加过两次微软的架构师培训，在北京的微软架构峰会上也有机会专门参加了 P&amp;P Workshop的学习，培训老师是微软总部SmartClient Architecture and Design Guide一书的作者Edward A.Jezieski，让我感受最深是老外深刻的技术底蕴，对程序开发的执著。<br> <br>对于DotNet架构经常用到的知识和技能储备有<br> 1.RUP方法论，4+1视图。用例驱动业务建模-&gt;分析模型-&gt;设计模型<br>  2.用例模式-&gt;分析模式-&gt;设计模式<br> 3.常用的分布式技术<br> 4.对安全，异常，日志，性能等非功能性需求的关注<br> 5.对应用系统整体业务的关注<br> <br>相关的一些参考书籍(微软网站和电驴都可以下载到)<br> <br>微软网站提供的参考书籍<br> Enterprise Solution Patterns Using Microsoft .NET<br> .NET Data AccessArchitecture Guide<br> Application Architecture for .NET:Designing Applications and Services<br> Caching Architecture Guide for .NET Framework Applications<br> Designing Application-Managed Authorization<br> Smart Client Architecture and Design Guide<br> <br>其它架构方面的参考书籍<br> Software Architecture In Practice<br> Pattern-Oriented Software Architecture<br> The Art Of Software Architecture<br> Beyond Software Architecture<br> <br>模式方面的书籍<br> Analysis Patterns<br> Design Patterns - Elements of Reusable Object-Oriented Software<br> Applying UML and Patterns<br> Design Patterns Explained</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="602843-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13707640">2012-01-16</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>1 条评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="604217"
+data-atoken="13711101"
+data-score="14.13278"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326765976"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="604217"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="7">7</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$lin-tao-60"
+class="zm-item-link-avatar"
+href="/people/lin-tao-60">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg"
+class="zm-list-avatar"
+data-source="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" />
+</a>
+
+<a data-tip="p$t$lin-tao-60" href="/people/lin-tao-60">林涛</a>，<strong title="隐身中" class="zu-question-my-bio">隐身中</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="7">
+
+7 票，来自
+<span class="voters">
+<a data-tip="p$t$jecvay" href="/people/jecvay" class="zg-link" title="Jecvay Liu">Jecvay Liu</a>、<a data-tip="p$t$tang-xiao-xuan" href="/people/tang-xiao-xuan" class="zg-link" title="唐晓轩">唐晓轩</a>、<a data-tip="p$t$aahua" href="/people/aahua" class="zg-link" title="啊花">啊花</a>
+</span>
+
+
+<a href="javascript:;" name="more" class="zg-link-gray more"> 更多</a>
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">技术人员，最大的通病，就是就技术而技术，这个在初级阶段很实用，也高效，但是，想真正做好架构师这个职位，一定要清楚产品，甚至如何运营，一个好的架构，一定是符合当下并可以在一定时间内不用重构的架构（最少为半年，互联网的特点，不可能不重构，twitter之前披露的资料显示他们平均半年重构一次架构）。<br>关于混合语言的问题。这个问题我觉得要辩证的看，混合不一定好，也不一定不好，关键是要看团队的接受能力，单一语言的特点是整个团队的执行效率高，维护成本低；混合语言的特点是软件整体优，但维护成本和整个团队的执行成本就会很高，架构师也应该有这方面的考虑。<br>学习，保持好奇心，按着“1000”考虑问题，按着“1024”设计架构，总有一天，会成长起来的</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="604217-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13711101">2012-01-17</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>1 条评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="605933"
+data-atoken="13715376"
+data-score="12.13275"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326806958"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="605933"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="6">6</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$chen-fu-zhou"
+class="zm-item-link-avatar"
+href="/people/chen-fu-zhou">
+<img src="http://p4.zhimg.com/49/35/493501727_s.jpg"
+class="zm-list-avatar"
+data-source="http://p4.zhimg.com/49/35/493501727_s.jpg" />
+</a>
+
+<a data-tip="p$t$chen-fu-zhou" href="/people/chen-fu-zhou">陈甫鸼</a>，<strong title="生长于闽，求学入秦，漂泊适燕，实秦人也。" class="zu-question-my-bio">生长于闽，求学入秦，漂泊适燕，实秦人也。</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="6">
+
+6 票，来自
+<span class="voters">
+<a data-tip="p$t$luo-zhao-yu" href="/people/luo-zhao-yu" class="zg-link" title="罗照宇">罗照宇</a>、<a data-tip="p$t$whale" href="/people/whale" class="zg-link" title="胡维">胡维</a>、<a data-tip="p$t$zhtaoo" href="/people/zhtaoo" class="zg-link" title="朱海涛">朱海涛</a>
+</span>
+
+
+<a href="javascript:;" name="more" class="zg-link-gray more"> 更多</a>
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">从楼主题目里描述的背景出发，我的建议是这样的：<ol><li>对计算机这种工程学科，自学不一定不科学，但是要保持大量的实践。</li><li>为一个成型的产品Troubleshooting是进入架构领域的好办法。有一点必须强调：它不一定得是优秀的成熟产品。对善于总结的人来说，烂产品提供的反面教材从某种角度上看更加珍贵。</li><li>无论Troubleshooting经验如何丰富，最终我们必须要得到自己设计的机会。这是从经验积累落实到架构能力的唯一方法。如果条件许可，参与开源产品其实是个很好的机会（当然有的公司明令员工除非特许否则禁止参与开源项目，比如微软）。</li></ol>具体用什么技术前面很多朋友都有精彩论述，我一做驱动的，就不多啰嗦了。<br><br>还有一点必须指出的是，尽管我也认同架构的重要性，但从楼主自己说的自学内容（目前属于自学，设计模式，算法导论，编译原理，UML2.0等都在看）来看，我感觉楼主还没搞明白架构师究竟是什么。如今业界人人都在讲架构，但所谓架构师细分起来实际上有很多种，即便只是算软件行业经常要打交道的（也就是说芯片架构师不算），我见过的情况就包括如下：<ol><li><b>网站基础设施设计师</b>。比如一个能承受百万级访问量的网站该如何配置服务器等。这种架构师关注的是如何配置异地服务器，如何分流请求，如果做负载均衡、备份和同步等等。</li><li><b>IT基础设施设计师</b>。这种架构师和网站基础设施的架构师有一定交集，除此之外经常还需要考虑跟硬件有关的话题，比如机房空调温度，UPS，带宽升级等等。</li><li><b>软件设施设计师</b>。这种架构师经常要负责对软件系统使用的部件做选择，比如安全系统上使用的是Kerbero还是SSH，图形系统选择本地UI还是跨平台库，网络协议或文件格式使用公开的标准还是自己设计等等。此类人往往还关心许多诸如性能、兼容性等方面的话题。</li><li><b>框架狂热综合症患者</b>。此类“架构师”最喜欢的就是在一个项目里搞个所谓的类库，里面写上一堆抽象类和接口，然后到处宣称其类库设计极其便于扩展云云并强迫同事负责实现其具体功能。另外，此类人的一个显著特征是对各种新框架或语言特性异乎寻常地热衷，却从不屑于实现一个真正具有能用功能的部件。</li></ol>楼主希望自己成为架构师，这本身很好。但作为善意的提醒，我想楼主现在更需要搞清楚的是自己究竟希望成为哪一种架构师（我猜测更可能是第一种），然后才能针对性地去学习。无论如何，前三类架构师的共同特征是他们都具备对各种实际功能代码或硬件优缺点的知识，并且懂得如何根据项目需求（而非个人喜好）选择合理的技术完成任务。甚至有时候一个顶尖的架构师必须同时理解三个不同的方向——换言之，架构师的知识广度必须超过普通程序员。而至于第四种“架构师”， 可能大家已经注意到我说到此类人时用了引号，因为恕我直言，在我看来他们只由两类人组成：只会招摇撞骗的骗子，或是半桶水却不自知的可怜虫。<br><br> 当然了，要做第四种显然最容易，哈哈。</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="605933-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13715376">2012-01-18</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="603403"
+data-atoken="13709054"
+data-score="8.13279"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326719286"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="603403"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="4">4</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$linan"
+class="zm-item-link-avatar"
+href="/people/linan">
+<img src="http://p1.zhimg.com/16/63/166393fc5_s.jpg"
+class="zm-list-avatar"
+data-source="http://p1.zhimg.com/16/63/166393fc5_s.jpg" />
+</a>
+
+<a data-tip="p$t$linan" href="/people/linan">李楠</a>，<strong title="ERP/SAP/移动互联网/日本/苹果/KKK@ifanr。" class="zu-question-my-bio">ERP/SAP/移动互联网/日本/苹…</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="4">
+
+4 票，来自
+<span class="voters">
+<a data-tip="p$t$tiezhen" href="/people/tiezhen" class="zg-link" title="tiezhen">tiezhen</a>、<a data-tip="p$t$hv_johnny" href="/people/hv_johnny" class="zg-link" title="Johnny">Johnny</a>、<a data-tip="p$t$weixiao" href="/people/weixiao" class="zg-link" title="许微微">许微微</a>
+</span>
+
+
+<a href="javascript:;" name="more" class="zg-link-gray more"> 更多</a>
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">寻找大项目，争取 Troubleshooting 的机会。<br><br> 很多人都可以自顶向下yy，但是很少人会凭空获得实践的机会。自下往上更容易得到机会。制造期限较紧，不会有机会仔细分析系统，也不容易暴露出设计上的缺陷。所以有机会做 Troubleshooting 最为理想，容易获得机会，也可以更好的学习设计，更清晰的看到设计阶段的不足（较大的投资下，你看到的一般都是非常靠谱的设计）。<br><br>总结现有构架的不足。分享你的收获。大项目一般都有多个阶段，提出你的改进意见。<br><br>跟踪最新的解决方案（经常有成功的网站分享这方面的经验）。构建原型检验新技术。分享你的收获。<br><br>积累的信用会给你带来机会，耐心等待属于你的项目，珍惜她。<br><br>ps<br>远离 MS 。</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="603403-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13709054">2012-01-16</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>4 条评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="599836"
+data-atoken="13700196"
+data-score="4.13282"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326592706"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="599836"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="2">2</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$liu-xia-80"
+class="zm-item-link-avatar"
+href="/people/liu-xia-80">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg"
+class="zm-list-avatar"
+data-source="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" />
+</a>
+
+<a data-tip="p$t$liu-xia-80" href="/people/liu-xia-80">刘夏</a>，<strong title="所有的程序都是一般~" class="zu-question-my-bio">所有的程序都是一般~</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="2">
+
+2 票，来自
+<span class="voters">
+<a data-tip="p$t$tiezhen" href="/people/tiezhen" class="zg-link" title="tiezhen">tiezhen</a>、<a data-tip="p$t$unogz" href="/people/unogz" class="zg-link" title="钢盅郭子">钢盅郭子</a>
+</span>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">1. 心理准备：小公司可以作为实践的最佳平台，大集团可以作为学习的平台。不要灰心。  <br> 2. 从小事做起：仅仅从狭隘的软件系统架构来说，全部出自于实践和对每一个细微环节的设计：小的设计组成大的架构，而这些小的设计有很多模式可以帮助你（设计模式）。因此即便你只是编写一个计算器，也最好花精力去分析，设计。<br>3. 架构不是大而空的：面试的时候很多面试者都认为软件三层架构就是架构了，实际上这很片面。架构实际上是由需求，团队能力，开发周期（资金支持），版权限制等一系列因素叠加影响的，没有万能架构，只有针对一个具体项目的架构，因此应当从以上的诸多方面去分析，我需要什么样子的设计。<br><br>举个例子吧（当然，仍是相当笼统）。我有一个小的项目，就是一个基于 Web 的加减乘除计算器。首先这个需求很简单，操作非常有限（10个左右），开发人员可能1-2个，今后可能追加其他操作，但是这些其他操作和现有操作关系不大。5天之内完成上线。<br>（1）那么我会基于这些因素采用事务脚本的设计（请参见P of EAA）：<br>（1.1）这种设计的优点就是简洁，开发速度快。容易处理这种数量不多，耦合不强的需求。这正适合我们。<br>（1.2）其缺点是在需求不断增多的情况下容易产生冗余代码，由于我们对今后的需求和现阶段的功能有所估计（数量有限，耦合不强），认为这个问题对此项目影响不大，于是这样足以。<br>（2）而对于事物脚本的每一个操作，可以采用命令模式（Command Pattern）进行详细设计。<br>（3）我的团队开发人员均熟悉 .NET 下的开发，那么我们从语言上选择 C#， Framework 上可以选择 <a href="http://ASP.NET" target="_blank" class="external" rel="nofollow"><span class="invisible">http://</span><span class="visible">ASP.NET</span><span class="invisible"></span><i class="icon-external"></i></a> MVC。<br>（4）这个项目的数据存储要求非常有限，我们可以选择用 MySQL 或者 SQLite  作为解决方案。<br><br>View(JQuery-UI, JQuery-UI mobile)<br>---------(JSON)-------<br>Controller (事务脚本支持-&gt;命令模式)<br>---------(<a href="http://ADO.NET" target="_blank" class="external" rel="nofollow"><span class="invisible">http://</span><span class="visible">ADO.NET</span><span class="invisible"></span><i class="icon-external"></i></a> Provider)---<br>Storage(MySQL, SQLite)<br><br>这个例子的每一个部分都可以再详细划分，最终形成一个整体的决策。<br><br>总之，请不要灰心浮躁，不论多大（多小）的软件，每一个部分都影响着架构设计。设计好软件的每一个部分即可。</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="599836-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13700196">2012-01-15</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="603002"
+data-atoken="13708051"
+data-score="4.13279"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326707087"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="603002"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="2">2</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$cheng-dong-hui"
+class="zm-item-link-avatar"
+href="/people/cheng-dong-hui">
+<img src="http://p3.zhimg.com/74/67/7467b951a_s.jpg"
+class="zm-list-avatar"
+data-source="http://p3.zhimg.com/74/67/7467b951a_s.jpg" />
+</a>
+
+<a data-tip="p$t$cheng-dong-hui" href="/people/cheng-dong-hui">程东辉</a>，<strong title="懂rails,知道敏捷方法，喜爱写程序的三十多岁男人" class="zu-question-my-bio">懂rails,知道敏捷方法，喜爱写程…</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="2">
+
+2 票，来自
+<span class="voters">
+<a data-tip="p$t$xu-feng-54" href="/people/xu-feng-54" class="zg-link" title="徐峰">徐峰</a>、<a data-tip="p$t$xu-wei-25-47" href="/people/xu-wei-25-47" class="zg-link" title="徐伟">徐伟</a>
+</span>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">不要太在意【架构师】这个字眼，在技术行业，保持对新技术的探索、求知欲望、积极的去思考，脚踏实地的去做产品（或项目），你会发现，原来所谓的架构师，不过如此</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="603002-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13708051">2012-01-16</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="717826"
+data-atoken="13994425"
+data-score="4.13187"
+data-collapsed="0"
+data-isowner="0"
+data-created="1331096248"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="717826"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="2">2</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$lideyi"
+class="zm-item-link-avatar"
+href="/people/lideyi">
+<img src="http://p2.zhimg.com/1a/05/1a05a8c8c_s.jpg"
+class="zm-list-avatar"
+data-source="http://p2.zhimg.com/1a/05/1a05a8c8c_s.jpg" />
+</a>
+
+<a data-tip="p$t$lideyi" href="/people/lideyi">李德逸</a>，<strong title="关注移动互联网和企业应用" class="zu-question-my-bio">关注移动互联网和企业应用</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="2">
+
+2 票，来自
+<span class="voters">
+<a data-tip="p$t$zhang-lei-32-6" href="/people/zhang-lei-32-6" class="zg-link" title="张雷">张雷</a>、<a data-tip="p$t$whale" href="/people/whale" class="zg-link" title="胡维">胡维</a>
+</span>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">要想成为一名架构师，你需要具备几点素质，并且保持平衡。<br>1、技术能力，有一个方面很深入，然后又要有广度。这点很重要，因为架构师所面临的都是各种别人遇不到或待解决的场景。深度保证你能在某个方面是专家并能举一反三的去保证你对其他技术方面理解和见解，广度保证你的视野。切勿技术崇拜，Java\.Net\C++ ，MS\IBM 都是在不同的方面你要了解的内容和工具。<br>2、管理能力，通常你要运用一个Team的能力去实现的架构，并保证。很好的计划、组织、沟通是必备的。越高的架构职位，这方面就越重要。我们所说的主架则是技术和管理的最佳结合。<br>3、高情商，不要期待技术完美的架构。会有很多人、资金、现实情况的因素来决定你的架构，如果是技术唯论，通常你的架构是无效的。你会很郁闷，并且无法实现。架构师的技术上最牛的地方就是综合所有因素让方案按照你的设想去实现，又让所有人满意。这意味着你是一个高情商的人。<br>4、最后如果作为一名应用架构师的话，首先你要做到业务专家，才能成为应用架构师。<br>所以呢，通常没有8-10年你很难做到。只要你持续努力，自然水到渠成。</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="717826-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13994425">2012-03-07</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>1 条评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="609187"
+data-atoken="13723534"
+data-score="2.13274"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326936349"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="609187"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="1">1</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$wangxb07"
+class="zm-item-link-avatar"
+href="/people/wangxb07">
+<img src="http://p2.zhimg.com/0e/ff/0eff2fa7e_s.jpg"
+class="zm-list-avatar"
+data-source="http://p2.zhimg.com/0e/ff/0eff2fa7e_s.jpg" />
+</a>
+
+<a data-tip="p$t$wangxb07" href="/people/wangxb07">王贤斌</a>，<strong title="牛逼哄哄——什么都懂" class="zu-question-my-bio">牛逼哄哄——什么都懂</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info " data-votecount="1">
+
+1 票，来自
+<span class="voters">
+<a data-tip="p$t$tiezhen" href="/people/tiezhen" class="zg-link" title="tiezhen">tiezhen</a>
+</span>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">个人觉得，有些方面的能力是天生的。<br>如果你想成为一个好的架构师，不是看几本书，读几年书就能成为的。<br><br><br>我觉得好的架构师需要2个根本的，比较天生的能力（相对比较天生，但也是日积月累出来的）。<br><br><b>1、在项目的开发过程中，能很快的感觉到问题会发生在哪个环节。</b><br><br>当然，要做到这点，最主要靠的是经验，其次才是意识，这个能力是必须的。不管什么项目，对于进度影响最大的其实就是当问题突然的出现。我们或许规避不了问题，但我们可以有准备，在前期编码，或下层代码的开发过程中，针对可能出现的问题，做一些预备工作。<br><b><br></b><br><b>2、对于每个项目的责任心。</b><br><br><br>或许，这个是做任何事情都需要的一种，人身上必须要有的要素。<br>当问题发生时，第一时间，和同事一起去找问题，而不是推卸自身的责任。当你的同事，在架构内，开发进度缓慢、bug数量增加、经常抱怨时，你是否需要去询问一下问题，分析一下是否是架构导致以上原因。<br><br><br><br><br><br><br>当然，架构师必须的当然是，写上N年的代码，这个谁都知道，就不必多说了。其他的，以上几位已经讲的很多了。<br><br><br>笨人拙见，祝我们一起奔向自己的未来。<br><br></div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="609187-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13723534">2012-01-19</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="608311"
+data-atoken="13721307"
+data-score="0.13275"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326888417"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="608311"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="0">0</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$pengfei.wang"
+class="zm-item-link-avatar"
+href="/people/pengfei.wang">
+<img src="http://p4.zhimg.com/70/5a/705a822bc_s.jpg"
+class="zm-list-avatar"
+data-source="http://p4.zhimg.com/70/5a/705a822bc_s.jpg" />
+</a>
+
+<a data-tip="p$t$pengfei.wang" href="/people/pengfei.wang">王鵬飛</a>，<strong title="给我个温暖的满怀着温暖的彼此关照的家庭 / 让窗外有蓝天绿草也如茵再来点白云" class="zu-question-my-bio">给我个温暖的满怀着温暖的彼此关照的家…</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info empty" data-votecount="0">
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">个人意见：作为一个“架构师”，最重要的两点：<br>第一，也是最重要的一点是深刻理解业务规则和业务特点。忽略了这一点，做不出好软件。<br>其次，是技术视野必须要宽，宽度甚至比深度更重要。不是用某种你谙熟的技术去解决业务问题，而是根据业务问题选择合适的技术。</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="608311-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13721307">2012-01-18</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="737619"
+data-atoken="14043816"
+data-score="0.13174"
+data-collapsed="0"
+data-isowner="0"
+data-created="1331779018"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="737619"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="0">0</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$rao-lei-84"
+class="zm-item-link-avatar"
+href="/people/rao-lei-84">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg"
+class="zm-list-avatar"
+data-source="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" />
+</a>
+
+<a data-tip="p$t$rao-lei-84" href="/people/rao-lei-84">饶磊</a>，<strong title="软件工程师" class="zu-question-my-bio">软件工程师</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info empty" data-votecount="0">
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">花大量时间去专研，多关注开源，多上论坛，多结交技术朋友，多参考互联网上一些大公司的技术分享方案<br>优秀架构师的绝大部分生活就是跟笔记本打交道的，哈哈，笔记本最好形影不离<br>还有一点就是不要太功利，如果做架构师一心只想赚大钱肯定做不好架构师，哈哈，不过真成为了优秀架构师，money自然会来的</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="737619-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/14043816">2012-03-15</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="608570"
+data-atoken="13721964"
+data-score="-2.86725"
+data-collapsed="0"
+data-isowner="0"
+data-created="1326894570"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="608570"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="0">0</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$egmkang"
+class="zm-item-link-avatar"
+href="/people/egmkang">
+<img src="http://p1.zhimg.com/5c/0b/5c0b5c7fa_s.jpg"
+class="zm-list-avatar"
+data-source="http://p1.zhimg.com/5c/0b/5c0b5c7fa_s.jpg" />
+</a>
+
+<a data-tip="p$t$egmkang" href="/people/egmkang">egmkang wang</a>，<strong title="C/C++/Lua,网游服务器开发" class="zu-question-my-bio">C/C++/Lua,网游服务器开发</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info empty" data-votecount="0">
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">写个十几年代码,没准你可以成为一个架构师的<br><br></div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="608570-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13721964">2012-01-18</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+<div tabindex="-1" class="zm-item-answer "
+data-aid="719909"
+data-atoken="13999663"
+data-score="-2.86814"
+data-collapsed="0"
+data-isowner="0"
+data-created="1331164651"
+data-deleted="0">
+<a class="zg-anchor-hidden" name="719909"></a>
+
+<div class="zm-votebar">
+<button class="up "><span class="vote-arrow"></span></button>
+<button class="down "><span class="vote-arrow"></span></button>
+</div>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="0">0</a>
+</div>
+<div class="zm-item-answer-detail">
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+<a data-tip="p$t$he-zhan-bang"
+class="zm-item-link-avatar"
+href="/people/he-zhan-bang">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg"
+class="zm-list-avatar"
+data-source="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" />
+</a>
+
+<a data-tip="p$t$he-zhan-bang" href="/people/he-zhan-bang">何展邦</a>，<strong title="c/c++" class="zu-question-my-bio">c/c++</strong>
+</h3>
+</div>
+<div class="zm-item-vote-info empty" data-votecount="0">
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="116467" data-action="/answer/content">
+<div class="zm-editable-content clearfix">我已不做开发好多年</div>
+</div>
+<div class="zm-item-meta zm-item-comment-el zu-question-answer-item-meta">
+<a class="zg-anchor-hidden ac" name="719909-comment"></a>
+<a class="answer-date-link meta-item" data-gaq="feed|click_answer_link|feed_answer" href="/question/19841397/answer/13999663">2012-03-08</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" name="addcomment" class=" meta-item zu-question-answer-meta-comment">
+<i class="z-icon-comment"></i>添加评论</a>
+
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="thanks">
+<i class="z-icon-thank"></i>感谢</a>
+
+
+<a href="javascript:;" data-gaq="feed|share_answer|feed_answer"
+class="meta-item zu-autohide"
+name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="javascript:;"
+class="meta-item zu-autohide zu-question-answer-meta-fav" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+<a href="javascript:;"
+class="meta-item zu-autohide"
+name="nohelp">
+<i class="z-icon-no-help"></i>没有帮助</a>
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="javascript:;" class="zu-autohide zm-item-answer-cc zm-item-answer-cc-tip" aria-label="知识共享协议">
+<i class="copy_icon_1"></i><i class="copy_icon_2"></i><i class="copy_icon_3"></i><em class="hide-text">署名-非商业使用-禁止演绎</em>
+</a>
+
+</div>
+</div>
+</div>
+
+</div>
+<div id="zh-question-collapsed-link" class="zu-question-collap-title" style="display:none" >
+<a target="_blank" href="http://www.zhihu.com/question/20120168" class="zg-right zg-link-gray">为什么会被折叠？</a>
+<a href="javascript:;" name="expand" class="zg-link-gray" id="zh-question-collapsed-switcher">
+<span id="zh-question-collapsed-num">0</span>
+个回答被折叠
+</a>
+</div>
+<div id="zh-question-collapsed-wrap" class="zm-item-expanded" style="display:none"></div>
+<a name="draft"></a>
+<div id="zh-question-answer-form-wrap" class="zh-question-answer-form-wrap" data-isabout="0">
+<div class="zm-editable-tip"></div>
+<div class="zm-editable-content"></div>
+</div>
+<!-- end of content -->
+</div>
+</div>
+<div class="zu-main-sidebar">
+<div class="zm-side-section">
+<div class="zm-side-section-inner" id="zh-question-side-header-wrap">
+<a class="zg-unfollow zg-btn-white zg-mr10" href="javascript:;" name="focus" id="sfb-116467">取消关注</a>
+
+<div class="zg-btn-white" id="zh-question-operation-menu"
+>
+<i class="zg-icon-dropdown-menu zg-icon"></i><b class="hide-text">设置</b>
+</div>
+
+<div class="zh-question-followers-sidebar">
+<div class="zg-gray-normal">
+
+<a href="/question/19841397/followers"><strong>218</strong></a>
+人关注该问题
+
+</div>
+
+<div class="list zu-small-avatar-list zg-clear">
+
+<a title="王贤斌"
+data-tip="p$t$wangxb07" 
+class="zm-item-link-avatar"
+href="/people/wangxb07">
+<img src="http://p2.zhimg.com/0e/ff/0eff2fa7e_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="叶楠"
+data-tip="p$t$xie-nan-86" 
+class="zm-item-link-avatar"
+href="/people/xie-nan-86">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="王栋"
+data-tip="p$t$wang-dong-3" 
+class="zm-item-link-avatar"
+href="/people/wang-dong-3">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="王德福"
+data-tip="p$t$wang-de-fu" 
+class="zm-item-link-avatar"
+href="/people/wang-de-fu">
+<img src="http://p2.zhimg.com/a7/56/a75620376_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="kession"
+data-tip="p$t$kession" 
+class="zm-item-link-avatar"
+href="/people/kession">
+<img src="http://p3.zhimg.com/24/0f/240f39841_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="刘波"
+data-tip="p$t$liu-bo-42" 
+class="zm-item-link-avatar"
+href="/people/liu-bo-42">
+<img src="http://p2.zhimg.com/4b/4e/4b4e24703_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="陶铖"
+data-tip="p$t$tcdona" 
+class="zm-item-link-avatar"
+href="/people/tcdona">
+<img src="http://p3.zhimg.com/34/15/341574770_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="蒋云鹏"
+data-tip="p$t$jiang-yun-peng" 
+class="zm-item-link-avatar"
+href="/people/jiang-yun-peng">
+<img src="http://p1.zhimg.com/55/1b/551b52143_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="马小军"
+data-tip="p$t$ma-xiao-jun-61" 
+class="zm-item-link-avatar"
+href="/people/ma-xiao-jun-61">
+<img src="http://p2.zhimg.com/fd/1e/fd1e22593_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="童一宁"
+data-tip="p$t$roc_tong" 
+class="zm-item-link-avatar"
+href="/people/roc_tong">
+<img src="http://p2.zhimg.com/70/78/7078ecc87_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="刘钢"
+data-tip="p$t$luizspirit" 
+class="zm-item-link-avatar"
+href="/people/luizspirit">
+<img src="http://p4.zhimg.com/dd/23/dd23884eb_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="Spirit_Dongdong"
+data-tip="p$t$spirit-dongdong" 
+class="zm-item-link-avatar"
+href="/people/spirit-dongdong">
+<img src="http://p4.zhimg.com/96/3a/963a0b047_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="王宇"
+data-tip="p$t$wang-yu-42-12" 
+class="zm-item-link-avatar"
+href="/people/wang-yu-42-12">
+<img src="http://p1.zhimg.com/ac/6e/ac6e90b26_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="莫尔奔"
+data-tip="p$t$mo-er-ben" 
+class="zm-item-link-avatar"
+href="/people/mo-er-ben">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="陈小仁"
+data-tip="p$t$goddog" 
+class="zm-item-link-avatar"
+href="/people/goddog">
+<img src="http://p4.zhimg.com/66/6b/666b0abfc_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="柯戈扬"
+data-tip="p$t$ke-ge-yang" 
+class="zm-item-link-avatar"
+href="/people/ke-ge-yang">
+<img src="http://p1.zhimg.com/59/3f/593f1f745_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="周华磊"
+data-tip="p$t$zhou-hua-lei" 
+class="zm-item-link-avatar"
+href="/people/zhou-hua-lei">
+<img src="http://p4.zhimg.com/33/5c/335c42717_s.jpg" class="zm-item-img-avatar">
+</a>
+
+<a title="杨昆"
+data-tip="p$t$yang" 
+class="zm-item-link-avatar"
+href="/people/yang">
+<img src="http://p2.zhimg.com/ae/84/ae84ee42f_s.jpg" class="zm-item-img-avatar">
+</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="zm-side-section" id="zh-question-inter-invite">
+<div class="zm-side-section-inner">
+<h3>邀请别人回答问题</h3>
+
+<div id="zh-question-side-invitation-notanon" >
+<div class="zg-section">
+<a href="javascript:;" id="zh-question-side-invitation-form-toggle">站内邀请</a>
+<span class="zg-gray" id="zh-question-side-invitation-count"></span>
+<span class="zg-gray">或者</span>
+<a href="javascript:;" id="zh-question-weibo-invite" name="mail">邮件邀请</a>
+</div>
+<div class="zh-question-side-invitation-form" id="zh-question-side-invitation-form" style="display:none">
+<div class="zg-section">
+<input type="text" id="zh-question-inter-invite-input" class="zg-form-text-input"/>
+</div>
+<div class="zu-question-inter-invited-small-list zg-clear">
+</div>
+<div class="zu-question-inter-invited-list"></div>
+<div class="zg-border-fix"></div>
+</div>
+</div>
+<div id="zh-question-side-invitation-anon" style="display: none;">
+<div class="zg-gray-normal">取消使用匿名身份才能邀请人回答问题。</div>
+</div>
+
+<div style="display:none">
+<div id="zh-question-outer-invite-diag">
+<ul class="zm-common-nav-bar zg-clear">
+<li class="zm-common-nav-bar-item" style="display:none">
+<!-- <a href="javascript:;" class="zm-common-nav-bar-link" id="tb-sina">微博邀请</a> -->
+</li>
+<li class="zm-common-nav-bar-item">
+<a href="javascript:;" class="zm-common-nav-bar-link zm-common-nav-bar-current-light" id="tb-mail">邮件邀请</a>
+</li>
+</ul>
+<div class="zm-tab-content" style="display: none;"></div>
+<div class="zm-tab-content" id="tb-mail-content">
+<dl class="zm-form-table zm-form-table-medium">
+<dt class="zm-form-table-head zm-form-table-head-align-middle">
+<label for="user-name" class="zg-medium-gray">收件人：</label>
+</dt>
+<dd class="zm-form-table-field">
+<div><input class="zg-form-text-input" type="email" id="zh-invite-mail-reciiver" /></div>
+<input class="zg-form-text-input" id="zh-invite-mail-title" readonly value="龙红军邀请你到知乎回答问题" style="display:none" />
+</dd>
+<dt class="zm-form-table-head zm-form-table-head-align-middle">
+<label for="zh-invite-mail-content" class="zg-medium-gray">内容：</label>
+</dt>
+<dd class="zm-form-table-field">
+<div class="zg-form-text-input">
+<textarea id="zh-invite-mail-content" style="width:100%"
+data-content="我在知乎（zhihu.com）上发现了一个好问题《想成为一名出色的架构师，如何才能真正的提高自己？》，想邀请你来回答">
+</textarea>
+</div>
+</dd>
+</dl>
+<div class="zm-command">
+<a class="zm-command-cancel" name="cancel" href="javascript:;">取消</a>
+<a class="zg-r3px zg-btn-blue" name="send_mail" href="javascript:;">发送</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+var DZMT = DZMT || [];
+DZMT.push(["share_questions", [[["Fenng", "fenng", "http://p3.zhimg.com/42/90/42907070e_s.jpg", "99953853cc4219fabe8327301058357c"], "f5cb85b181cf109d2d9c1680de8f3243"], [["deviJi", "deviji", "http://p2.zhimg.com/59/a4/59a424ab8_s.jpg", "e93f9ae6b014b8d98fa8b11d21f86524"], "f5cb85b181cf109d2d9c1680de8f3243"], [["Fenng", "fenng", "http://p3.zhimg.com/42/90/42907070e_s.jpg", "99953853cc4219fabe8327301058357c"], "a4100bb349dc51ae86fc424c6752dc9d"], [["\u674e\u971c", "li-shuang-74", "http://p2.zhimg.com/6a/a9/6aa960ae4_s.jpg", "bf26ce8797c922af96b464025389f581"], "e0bc743ff50e8597957ef3d54bfb7ee3"]]]);
+DZMT.push(["trending_answerer", []]);
+</script>
+</div>
+</div>
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<h3>相关问题</h3>
+<ul id="zh-question-related-questions" class="zh-question-related-questions">
+
+<li><a class="question_link" href="/question/19810608">怎么样才能成为一名出色的摄影师？</a> <span class="num">7 个回答</span></li>
+
+<li><a class="question_link" href="/question/19847862">如何成为一名精算师？</a> <span class="num">4 个回答</span></li>
+
+<li><a class="question_link" href="/question/20171103">如何才能成为一名专业摄影师？</a> <span class="num">7 个回答</span></li>
+
+<li><a class="question_link" href="/question/19565503">如何能成为一名优秀的系统架构师？</a> <span class="num">3 个回答</span></li>
+
+<li><a class="question_link" href="/question/19619297">如何成为一名合格的互联网分析师？</a> <span class="num">5 个回答</span></li>
+
+</ul>
+</div>
+</div>
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<h3>分享问题</h3>
+<div id="zh-question-webshare-container" data-type="q" data-id="116467" data-url="/question/19841397" class="zh-question-webshare-links clearfix">
+<a href="javascript:;" name="sina"><i class="zg-icon zg-icon-webshare-weibo"></i>微博</a>
+<a href="javascript:;" name="mail"><i class="zg-icon zg-icon-webshare-mail"></i>邮件</a>
+<a href="javascript:;" name="letter"><i class="zg-icon zg-icon-webshare-letter"></i>站内私信</a>
+</div>
+<div style="display:none">
+<div id="zh-webshare-dialog" class="zh-webshare-dialog">
+<ul class="zm-common-nav-bar zg-clear">
+<li class="zm-common-nav-bar-item">
+<a href="javascript:;" class="zm-common-nav-bar-link zm-common-nav-bar-current-light" id="tb-webshare-sina">微博分享</a>
+</li>
+<li class="zm-common-nav-bar-item">
+<a href="javascript:;" class="zm-common-nav-bar-link" id="tb-webshare-mail">邮件分享</a>
+</li>
+<li class="zm-common-nav-bar-item">
+<a href="javascript:;" class="zm-common-nav-bar-link" id="tb-webshare-letter">站内信分享</a>
+</li>
+</ul>
+<div class="zm-tab-content weibo-panel" id="tb-webshare-sina-content">
+<div class="zg-section">
+<label>
+<input data-bindurl="/oauth/auth/sina?next=/oauth/callback" class="sina-checkbox" type="checkbox"  />
+<span class="zg-ico-sina"></span> 新浪微博</label>
+<label>
+<input data-bindurl="/oauth/auth/qq?next=/oauth/callback" class="qq-checkbox" type="checkbox"  />
+<span class="zg-ico-qq"></span> 腾讯微博</label>
+</div>
+<div class="zg-section">
+<div class="zg-form-text-input">
+<textarea style="width:100%" id="zh-webshare-sina-pm"></textarea>
+</div>
+</div>
+<div class="zm-command">
+<div class="zm-item-meta zg-left">
+<span id="zg-webshare-sina-counter">还可以输入 140字</span>
+</div>
+<a class="zm-command-cancel" name="cancel" href="javascript:;">取消</a>
+<a class="zg-btn-blue weibo-share-button" name="send_sina" href="javascript:;">发布</a>
+</div>
+</div>
+<div class="zm-tab-content" id="tb-webshare-mail-content" style="display: none;">
+<dl class="zm-form-table zm-form-table-medium">
+<dt class="zm-form-table-head zm-form-table-head-align-middle">
+<label for="user-name" class="zg-medium-gray">收件人：</label>
+</dt>
+<dd class="zm-form-table-field">
+<input class="zg-form-text-input" type="email" id="zh-webshare-mail-reciiver"/>
+</dd>
+<dt class="zm-form-table-head zm-form-table-head-align-middle">
+<label for="zh-webshare-mail-content" class="zg-medium-gray">内容：</label>
+</dt>
+<dd class="zm-form-table-field">
+<div class="zg-form-text-input">
+<textarea style="width:100%" id="zh-webshare-mail-content"></textarea>
+</div>
+</dd>
+</dl>
+<div class="zm-command">
+<a class="zm-command-cancel" name="cancel" href="javascript:;">取消</a>
+<a class="zg-r3px zg-btn-blue" name="send_mail" href="javascript:;">发送</a>
+</div>
+</div>
+<div id="tb-webshare-letter-content" class="zm-tab-content" style="display: none;"></div>
+</div>
+<script>
+var DZMT = DZMT || [];
+DZMT.push(["sina_bind_info", []]);
+DZMT.push(["qq_bind_info", []]);
+</script>
+</div>
+</div>
+</div>
+
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<h3>问题状态</h3>
+<div class="zg-gray-normal">
+最近活动于 <span class="time">16:52</span>
+<span class="zg-bull">&bull;</span>
+<a href="/question/19841397/log">查看问题日志</a>
+</div>
+<div class="zg-gray-normal">
+被浏览 <strong>2191</strong> 次，相关话题关注者 <strong>3983</strong> 人
+</div>
+</div>
+</div>
+</div>
+<div class="zg-clear"></div>
+</div>
+
+
+<div id="zh-footer" class="zu-footer">
+<div class="zg-wrap zu-footer-inner">
+<div class="zg-left">
+<a href="/read" class="zg-link-gray-14">知乎阅读</a>
+<span class="zg-bull">&bull;</span>
+<a href="/explore" class="zg-link-gray-14">发现</a>
+</div>
+<a href="/question/19581624" target='_blank' class="zg-link-gray-14">知乎指南</a>
+<span class="zg-bull">&bull;</span>
+<a href="javascript:;" class="zg-link-gray-14 zg-report" id="zh-report">建议反馈</a>
+<div style="display:none;" id="zh-report-content">
+<select class="zg-editor-type zg-right">
+<option value="help">使用帮助 </option>
+<option value="bug">问题反馈</option>
+<option value="suggest">功能建议</option>
+</select>
+<div class="zg-report-title">
+<span class="zg-gray-darker">请填写你的反馈内容</span>
+<span class="zg-report-msg" style="display:none;">请选择反馈种类：</span>
+</div>
+<div class="zg-editor-simple-wrap zg-form-text-input zg-report-content">
+<textarea class="zg-editor-input" name="content"></textarea>
+</div>
+</div>
+<span class="zg-bull">&bull;</span>
+<a href="/terms" target="_blank" class="zg-link-gray-14">知乎协议</a>
+<span class="zg-bull">&bull;</span>
+<span>&copy; 2013 知乎</span>
+</div>
+</div>
+<div style="display:none">
+<div id="zh-add-question-form-dom">
+<div class="zg-section-big zm-modal-dialog-guide-title zg-r5px add-question-guide" style="display:none">
+<p>知乎禁止求职招聘、寻人寻物等类型的内容，详情可参看 <a href="http://www.zhihu.com/question/19806261" target="_blank">知乎提问规范有哪些？</a></p>
+</div>
+<div class="zg-section-big">
+<div id="zm-modal-dialog-info-wrapper"></div>
+<div style="display: none;position: relative;" id="zm-modal-dialog-warnmsg-wrapper"><div class="zm-modal-dialog-warnmsg zm-modal-dialog-guide-warn-message zg-r5px"></div>
+<a name="close" title="关闭" href="javascript:;" class="zu-global-notify-close">x</a>
+<span class="zm-modal-dialog-guide-title-msg"></span>
+</div>
+<div class="zg-form-text-input">
+<textarea class="zg-editor-input" title="在这里输入问题" id="zh-question-suggest-title-content"></textarea>
+</div>
+<div id="zh-question-suggest-ac-wrap" style="position: absolute;"></div>
+</div>
+<div class="zg-section-big">
+<div style="display: none;position: relative;" class="zm-modal-dialog-warnmsg-wrapper">
+<div class="zm-modal-dialog-warnmsg zm-modal-dialog-guide-warn-message zg-r5px"></div>
+<a name="close" title="关闭" href="javascript:;" class="zu-global-notify-close">x</a>
+<span class="zm-modal-dialog-guide-title-msg"></span>
+</div>
+<div>
+<a href="javascript:;" id="zh-question-suggest-detail-trigger"><span class="zm-add-question-detail-icon"></span></a>
+<span id="zh-question-form-detail-err"></span>
+</div>
+<div id="zh-question-suggest-detail-container">
+<div class="zm-editable-content" data-disabled="1"></div>
+</div>
+</div>
+<div class="zm-add-question-form-topic-wrap">
+<div style="" id="zh-question-suggest-topic-container" class="zm-tag-editor zg-section">
+<div class="zm-tag-editor-labels"></div>
+<div id="zh-question-suggest-autocomplete-container"></div>
+</div>
+</div>
+<div class="zm-command">
+<label class="zm-question-form-hide-in-about-question-el zg-left">
+<input type="checkbox" value="1" class="zg-addq-isanon">匿名
+<span class="zm-question-form-split">&nbsp;</span>
+</label>
+<div class="zg-left zm-add-question-form-sns-wrap">
+<span>分享到</span>
+<a class="zg-icon sina-icon zm-sns-icon-binded" data-tip="s$b$分享到新浪微博" href="javascript:;" id="zh-add-question-form-share-sina" style="display:none;"></a>
+<a class="zg-icon sina-icon" data-tip="s$b$分享到新浪微博" href="/oauth/auth/sina?next=/oauth/callback" target="_blank" id="zh-add-question-form-bind-sina" style="display:none;"></a>
+<a class="zg-icon qq-icon zm-sns-icon-binded" data-tip="s$b$分享到腾讯微博" href="javascript:;" id="zh-add-question-form-share-qq" style="display:none;"></a>
+<a class="zg-icon qq-icon" data-tip="s$b$分享到腾讯微博" href="/oauth/auth/qq?next=/oauth/callback" target="_blank" id="zh-add-question-form-bind-qq" style="display:none;"></a>
+</div>
+<a href="javascript:;" name="cancel" class="zm-command-cancel">取消</a><a href="javascript:;" name="addq" class="zg-r5px zu-question-form-add zg-btn-blue">确认</a><a href="" name="jumpq" class="zg-r5px zg-btn-blue zu-question-form-jump" style="display:none;">查看问题</a>
+</div>
+</div>
+</div>
+
+
+<div style="display:none">
+
+
+
+</div>
+<script type="text/javascript">
+var DZMT = DZMT || [];
+
+DZMT.push(["enforce_realname", ""]);
+</script>
+
+<script src="http://static.zhihu.com/static/js/lib/jquery-latest.min.js?v=1.8.2"></script>
+
+
+<script src="http://static.zhihu.com/static/js/v2/c/z1301081403040020.js"></script>
+
+<script>
+var DZMT = DZMT || [];
+
+DZMT.push(['form_key', "64849258-15667701068898250409665540895525606279121726932"]);
+
+DZMT.push(['new_noti', 1]);
+
+
+DZMT.push([
+'current_user',
+["\u9f99\u7ea2\u519b",
+"long-hong-jun",
+"http:\/\/p4.zhimg.com\/32\/64\/326485725_s.jpg",
+"fbfdd27a4683424a71070e97486c4e48",
+"\u65b0\u6d6a\u7f51\u5e94\u7528\u5f00\u53d1\u5de5\u7a0b\u5e08",
+0,
+0,
+1,
+"habaishi@126.com",
+"http:\/\/www.126.com",
+]
+]);
+
+DZMT.push(['env', ["zhihu.com", "comet.zhihu.com", false, false,1301081403040020 ]]);
+
+DZMT.push(["current_question", [116467,0,0,null,0,0,0,0,false,true,true,19841397,1,[],[]] ]);
+DZMT.push(["draft", [] ]);
+DZMT.push(["user_answer_source", "" ]);
+
+ZH.main(DZMT);
+
+ZH.entrySQ();
+
+
+ZH.ill();
+
+</script>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-20961733-1']);
+
+_gaq.push(['_setVar', 'Logged In']);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<input type="hidden" name="_xsrf" value="c2caba60f8ca4ed7a32828660aa5e9ad"/>
+<script type="text/javascript">
+//<![CDATA[
+ZH.u([["load_noti"]]);
+//]]>
+</script>
+</body>
+</html>
