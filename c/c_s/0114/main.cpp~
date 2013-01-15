@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+#include "add.h"
+using namespace std;
+
+int main(int argc, char *argv[]){
+    int x,y,re;
+    x=1;
+    y=2;
+    //re = add(1,2);
+    printf("123\r\n%d", long_add(x,y));
+};
+
