@@ -1,0 +1,214 @@
+-----
+http://dbanotes.net/arch/instagram.html-
+Instagram 架构分析笔记
+Updated: 2012 年4月10日凌晨消息，Instagram 被 Facebook 以10亿美金收购。团队规模：13 人。
+Instagram
+ 团队上个月才迎来第 7 名员工，是的，7个人的团队。作为 iPhone 上最火爆的图片类工具，instagram 用户数量已经超过 1400 万，图片数量超过 1.5 亿张。不得不说，这真他妈是个业界奇迹。
+几天前，只有三个人的 Instagram 工程师团队发布了一篇文章：
+What Powers Instagram: Hundreds of Instances, Dozens of Technologies
+，披露了 Instagram 架构的一些信息，足够勾起大多数人的好奇心。读罢做点笔记，各种线索还是有一定参考价值的。能打开原文的建议直接读原文。
+Instagram 开发团队
+奉行
+的三个核心原则：
+OS/主机
+操作系统的选择，在Amazon EC2上跑 Ubuntu Linux 11.04 (Natty Narwhal) ，这个版本经过验证在 EC2 上够稳定。因为只有三名工程师，只有三名工程师，所以自己部署机器到 IDC 是不靠谱的事情。幸好有亚马逊。
+负载均衡
+此前曾用过两台 Nginx 做 DNS 轮询承载前端请求，这样做会有副作用，现在已经迁移到Amazon的ELB(Elastic Load Balancer)，起了三个 Nginx 实例，在 ELB 层停掉了 SSL , 以缓解 CPU 压力。DNS 服务使用 Amazon Route53 服务。 
+应用服务器
+启用了 25 个  Django 实例，运行在 High-CPU Extra-Large 类型的服务器实例上，之所以用 High-CPU Extra-Large 实例是因为应用请求是 CPU 密集型而非 IO 密集型。
+使用 
+Gunicorn
+ 作为 WSGI 服务器。过去曾用过 Apache 下的 mod_wsgi 模块，不过发现 Gunicorn 更容易配置并且节省 CPU 资源。使用 
+Fabric
+ 加速部署。
+数据存储
+用户信息、图片元数据、标签等大部分数据存储在 PostgreSQL 中。主要的 Shard 数据库集群有 12个节点。
+实践中发现 Amazon 的网络磁盘系统单位时间内寻道能力不行，所以有必要将数据尽量放到内存中。创建了软 RAID 以提升 IO 能力，使用的 
+Mdadm
+ 工具进行 RAID 管理。
+管理内存中的数据，
+vmtouch
+ 这个小工具值得推荐。
+PostgreSQL 设置为 Master-Replica 方式，流复制模式。利用 EBS 的快照进行数据库备份。使用 XFS 文件系统，以便和快照服务充分配合。 使用 
+repmgr
+ 这个小工具做 PostgreSQL 复制管理器器。
+连接池管理，用了 
+Pgbouncer
+。
+Christophe Pettus
+ 的文章包含了不少 
+PostgreSQL
+ 数据库的信息。
+TB 级别的海量图片存储在 Amazon S3 上，CDN 采用的也是 Amazon 的服务，CloudFront。
+Instagram 也是 Redis 的重度用户，Feed 以及 Session 信息都用 Redis 处理，Redis 也是以 Master-Replica 方式部署。在 Replica 节点上进行数据备份。
+使用了 Apache Solr 承担  Geo-search API 的工作，Solr 简单的 JSON 接口也不错。
+缓存使用了 6 个 Memcached 实例，库使用  pylibmc 和 libmemcached。亚马逊也提供缓存服务－Elastic Cache service ，Instagram 也有尝试，不过不便宜。
+任务队列/发布通知
+队列服务使用  
+Gearman
+ ，通知系统则使用
+ pyapns
+ 来实现。
+监控
+前面提及的服务器实例数量加起来，的确有100多个，有效的监控是相当有必要的。使用  Munin 作为主要监控工具 , 也写了不少定制插件，外部监控用 
+Pingdom
+ 的服务。通知服务使用  
+PagerDuty
+。
+对于 Python 的错误报告，使用 Disqus 团队开源的  
+Sentry
+ 来处理。
+几个感想
+0）轻装上阵说起来容易，做起来非常难。这也是 Instagram 团队目前最令人着迷的地方；
+1）Python 社区已经足够成熟，各个环节上都已经有不错的解决方案了。
+2）如果要问我最大的一个感慨，我要说：
+Amazon 真是一家伟大的公司，甚至比 Google 还伟大
+。
+EOF
+-----
+http://dbanotes.net/arch/quora_tech.html-
+Quora 用了哪些技术 ?
+很多团队都在学习、研究 Quora 。前段时间看到这篇 
+Quora
+s Technology Examined
+ ，阐述了 Quora 的技术架构，有一些值得关注的信息，记录并分享一下。
+使用云计算服务
+Quora 大量使用 Amazon EC2 与 S3 服务；操作系统部署的是 Ubuntu Linux，易于部署和管理；静态内容用 Cloudfront.服务分发，图片先传到 EC2 服务器，使用 Pyhon S3 
+API
+ 处理后后传到 S3。
+从开始就使用云计算服务的的好处是节省了大量人工维护硬件服务器的成本，当然这个做法在咱这片土地上不太可行。
+
+（refer: 
+Copyright 
+)
+
+
+Web 层与 
+CMS
+ 
+HAProxy 作为前端负载均衡服务器，反向代理服务器是 Nginx，Nginx 后面则是 Pylons (
+Pylons + Paste
+) , 承担动态 Web 请求。 
+Webnode2 与 LiveNode 这两个内部系统承担创建、管理内容的重任，Webnode2 生成 
+HTML
+、
+CSS
+ 与 JavaScript ，并且与 LiveNode 轻度耦合。LiveNode 的作用用以显示 Web 页面内容。用 Python、C++ 与 JavaScript 写的。特别提到用到了 jQuery 与 Cython。LiveNode 有可能开源。
+为什么用 Python?
+前面已经提到了一些 Python 相关的技术组件。有意思的是从 Facebook 出来的团队居然用 Python 作为主要开发语言。Quora 对此有所
+解释
+: Facebook 选择 
+PHP
+ 也并非是最佳选择，而是有历史原因。Quora 技术团队在考察了多个语言之后选择的 Python ，当然理由有一大堆，总体看来，并非很激进。
+通信处理
+后端通信使用的是 Facebook 开源出来的 
+Thrift
+，除了开发接口简单之外，可能更为熟悉也是一个因素吧 :) 
+Comet
+ 服务器使用的是 
+Tornado
+，用以处理 Long polling 以及 Push 更新(不知道
+知乎
+用的什么?)，Tornado 是前 FriendFeed 技术团队开源的产品。
+实时搜索
+因为 
+Sphinx
+ 不能满足实时性方面的要求，Quora 启用了自己开发的搜索引擎，只使用了 Thrift 与 Python Unicode 库，此外没有用别的。Quora 的搜索比较特别，因为要对输入内容做关联并且要做有效提示，所以需要提供更好的前缀索引(Prefix indexing)功能。
+Quora 搜索的实现还是挺有技术含量的，对后端的查询请求压力也不小(或许当前的并发请求量还没那么大)。对这个场景，做相关开发的朋友不妨仔细研究一下。如果大体框架类似，那么决定最后生出的因素很可能是那些细节。
+数据持久层
+大量使用 MySQL 作为存储方案，Memcached 作 Cache 层。没有使用当前比较火爆的 NoSQL 相关产品。Quora 这样做有自己的
+理由
+，用户量级没有达到百万的 SNS 站点完全没必要用 NoSQL 的东西。或许以后 Quora 也会启用。
+创始人查理·奇弗（Charlie Cheever）与亚当·德安杰洛（Adam D
+Angelo）之前都在 Facebook ，所以，Quora 的技术还真有不少 Facebook 的基因。Quora 的团队规模并不大，做技术的估计十余人而已，这么紧凑的团队利用了这么多的技术与产品，可见很多人都是多面手了。这是国内技术团队需要向国外同行学习的地方。
+EOF
+这只是一篇概要性的描述，如果要知道一些更为细节的东西，请看 Quora 上的相关评论，上文中已经给出相关链接。
+-----
+http://dbanotes.net/arch/facebook_how_facebook_ships_code.html-
+Facebook 如何发布代码 (How Facebook Ships Code 译文)
+按：这篇 
+How Facebook Ships Code
+ 提供了大量的细节信息，之前已经有朋友提供了一个
+翻译版本
+，阅读之后发现有些许错误，并且原文有更新，所以基于前面的翻译版本我重新翻译了一个(完整的)版本。一并谢过。希望这个版本对大家也有所参考。
+我对 Facebook 的运作方式着迷。这是个非常独特的环境，很难被复制（这个方式并不适合所有的公司，即使有些公司尝试过这么做）。下面这些笔记来自我和Facebook的许多朋友的交谈，关于他们开发、运维与软件发布等方面。
+好像很多人都对 Facebook 感兴趣
+ 这家公司的工程师驱动文化(Developer-driven culture)已经被公众
+大加研究
+，并且其它其它公司也在
+探求是否/如何实现工程师驱动文化
+。Facebook 的内部流程实在够神秘，当然，工程师团队也会发布一些关于新功能以及部分内部系统
+公开备忘
+，不过这些大多数是
+说明
+类的文章(What)，而非讲述
+机制
+(How)
+ 所以，外部人员很难明白 Facebook 的创新以及如何比其它公司做到更有效的对服务进行优化。我作为外部人员尝试深入理解 Facebook 的运作，汇集了几个月来的这些观察信息。出于对信息来源的隐私保护，我去掉了特定功能/产品的名字。我又等了6个月以后才发布这些记录，所以，有些信息肯定过时了。我希望发布这些信息会有助于了解 Facebook 的管理机制如何在组织中进行决策的推行而非逐步陷入混轮
+很难说这与 Facebook 的成败或是 Facebook 的产品协作相关。我相信很多面向消费者的互联网公司会从 Facebook 这个案例受益。
+*非常*感谢那些帮助我整理这篇文章的 Facebook 内部的朋友们。也要感谢项 
+epriest
+ 和
+ fryfrog
+ 这样的朋友，他们协助我进行对本文进行校正、编辑。
+记录：
+分析 Facebook 的研发文化如何随着时间演化是件非常有趣的事。特别是当公司发展壮大到数千员工的时候，这种文化是否还能够延续？
+你觉得如何？在你公司里，
+开发者驱动(developer-driven)文化
+ 将会可行么？
+译者后记：很多时候是管中窥豹也是非常有趣的，而且，应该细致一点儿。另外，或许我们更应该关注为什么 Facebook 能够形成这样的文化。你说呢？
+译者后记续：Facebook 能形成工程师主导的文化，应该和 Facebook 的产品形态有很大关系。毕竟 Facebook 人人都会用 Facebook 
+ 换言之，如果是 Amazon / eBay 这样面向商业的用户的公司，业务逻辑会让工程师陷入五里雾中。
+EOF
+
+延伸阅读：
+Hacker News: What I Learned from Zuckerberg
+s Mistakes
+-----
+http://dbanotes.net/arch/foursquare_outage.html-
+Foursquare 长达 11 小时的宕机
+前几天 
+Foursquare
+ 经历了长达 11 个小时的宕机，没错，11 个小时。网站官方的
+解释
+是 Shard 负载不均匀造成后续的连锁反应。很多人都知道 Foursquare 在线的 DB 是 
+MongoDB
+，今天又看到 
+10gen
+ (MongoDB的开发与支持团队)的 Eliot Horowitz 在得到 Foursquare 许可后，通过邮件组详细介绍了宕机的过程：
+Foursquare outage post mortem
+，不用说，也有为 MongoDB 辟谣的意味在里面。
+读罢 10gen 团队的介绍（或者说解释）之后，发现这是一个很好的研究样本。值得分享。
+为了提高响应速度，Foursquare 使用 MongoDB 存储 Check-in 的数据已经有一段时间了。这部分数据的数据库起初跑在一个 66GB 内存的 Amazon EC2 单实例上（全部在内存里），两个月前，出于对容量增长的考虑，迁移到两台 Shard 集群上。每个 Shard 机器都是 66GB 内存，为了冗余，每个 Shard 都有复制到 Slave 实例。迁移的目标是所有的 Check-in 数据都保存在内存中。数据根据 ID 分成 200 个 Shard 分片，两台机器各占一半，也就说联机数据在每台机器上各使用 33GB 的内存。两个月相安无事。
+问题来了，因为 Shard 算法导致的数据分散不均衡，其中一台(Shard0)数据增长到 67GB(另外一台 50GB)，超过了 66GB 的限制，读写部分分散到磁盘上，性能急剧下降。从而，网站宕机。
+首先尝试增加第三台 Shard 机器，上线后开始迁移，读取从三台进行，Shard0 的数据迁移到 5% 的时候，但是写操作还是让 Shard0 宕机了。这个时候发现Shard0 存在数据碎片(data fragmentation)，即使数据迁移走，还是会占用原来的内存。每个Check-in 文档大约占用 300 字节，而 MongoDB 是 4KB 的页(Page)，也就说十几个文档会填满一个页，而迁移 5% 反而造成了页更加稀疏，并不是将页全部删除。
+这个时候已经到了第二天，随着网站全面宕机，技术团队开始用 MongoDB 的 repairDatabase() 功能来对数据库进行压缩，因为数据库太大和 EBS 慢，也因为 repairDatabase() 不能充分利用多核CPU 的能力，这个过程耗费了 4 个小时。之后这 5% 的内存空间终于释放出来，系统重新上线。
+随着 Shard0 修复，第三台成功上线，进而添加了更多的 Shard 服务器，现在数据已经更加的均衡，通过在Slave上运行 repairDatabase()，然后将其切换到 Master ，每台 Shard 内存占用缩减到 20GB左右。整个故障时间已经延续了 11 小时之多。
+产生问题的主要原因就是系统过载，前面介绍每台 Shard 承载原来 50% 的压力，到了问题发生的时候，单台 Shard 的负载已经超过 Shard 之前的系统负载，这时候已经积重难返了，在容量的临界点增加新系统资源，必然导致更多的停机时间。暴露了 Foursquare 团队在
+容量规划
+方面的不足之处，或许也因为业务增长太快了吧。另外，内存碎片化的问题在没有宕机之前，技术团队应该没考虑过这个问题，如果文档的大小超过 4K，碎片化问题就不严重了，这是特定应用场景造成的特定问题。10Gen 现在已经着手研究如何进在线压缩(online compaction)。再次，Shard 键值的顺序和插入顺序是不同的，这造成了迁移数据的时候 Chunk 的迁移不是连续的。
+这个过程给我们的启示是：最近 NoSQL 已经成为一个热词，类似 MongoDB 这样的新事物当然值得尝试，但是不能冒进，因为驾驭起来并非易事。仅仅能够使用是不够的，系统没出问题一切都好，一旦出了异常，有足够的技术力量(设想一下 Foursquare 得不到 10gen 团队的支持会如何?) 支持么？
+在极端情况下如何控制？
+ 如果回答不了这个问题，那么还应该暂缓。最好的办法就是
+等待
+。
+给我的另一个感慨是 Amazon 在云计算领域已经真的成为一个赢家，而且越来越得到 Web 2.0 Startup的信赖。前面说的 66GB 内存，应该指的是EC2 的 
+High-Memory Double Extra Large Instance
+，可提供的最大内存是 68.4 GB 。CPU 和内存能力都是可以接受的，存储方面的性能似乎还有点不足，也就是其中的 EBS ，指的是 Amazon Elastic Block storage。 
+EOF
+-----
+http://dbanotes.net/arch/instagram.html-
+-----
+http://dbanotes.net/arch/quora_tech.html-
+-----
+http://dbanotes.net/arch/instagram.html-
+-----
+http://dbanotes.net/arch/quora_tech.html-
+-----
+http://dbanotes.net/arch/facebook_how_facebook_ships_code.html-
+-----
+http://dbanotes.net/arch/foursquare_outage.html-
+-----
+http://dbanotes.net/arch/instagram.html-
+-----
+http://dbanotes.net/arch/quora_tech.html-
