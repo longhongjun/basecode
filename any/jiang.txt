@@ -1,4 +1,3 @@
-
 http://app.weibo.com/detail/4OxUiB?ref=appsearch
 抽奖转发平台分析:
 
@@ -14,6 +13,7 @@ http://app.weibo.com/detail/4OxUiB?ref=appsearch
 2 锁定潜在用户.针对黄v,蓝v用户,跑数据.
 3 针对普通用户,进行实时抓取.限制条件相对简单.只需要抓取部分用户即可.可按照前500条,后500条,中间随机抓取部分页面.
 
+功能做好后，可以通过后续的配置来限制
 
 
 
